@@ -4,8 +4,7 @@ layout: home
 
 hero:
   name: "ccat Documentation"
-  text: "Documentatation for the consulting contact application tool"
-  tagline: My great project tagline
+  tagline: "Documentatation for the consulting contact application tool"
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +21,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
