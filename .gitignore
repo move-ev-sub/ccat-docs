@@ -28,3 +28,6 @@ test/**/__screenshots__/**/*
 test/browser/fixtures/update-snapshot/basic.test.ts
 test/cli/fixtures/browser-multiple/basic-*
 .vitest-reports
+.vscode
+.vitepress/dist
+.vitepress/cache
