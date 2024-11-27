@@ -1,5 +1,17 @@
 {
-	"devDependencies": {
-		"vitepress": "^1.5.0"
-	}
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.4.1",
+    "vitepress": "^1.5.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  }
 }
