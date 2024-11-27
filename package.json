@@ -1,12 +1,15 @@
 {
   "type": "module",
   "scripts": {
-    "format": "prettier --write .",
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check .",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.4.1",
     "vitepress": "^1.5.0"
   },
