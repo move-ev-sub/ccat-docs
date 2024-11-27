@@ -4,14 +4,20 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "ccat Documentation",
   description: "Documentatation for the consulting contact application tool",
+  lang: "de",
+  locales: {
+    root: {
+      label: "German",
+      lang: "de",
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Anwender", link: "/users" },
-      { text: "Entwickler", link: "/developers" },
+      { text: "Einführung", link: "/" },
+      { text: "Für Anwender", link: "/users" },
+      { text: "Für Entwickler", link: "/developers" },
     ],
-
     sidebar: [
       {
         text: "Examples",
@@ -29,6 +35,36 @@ export default defineConfig({
         items: [{ text: "Einführung", link: "/developers" }],
       },
     ],
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "Suche",
+                buttonAriaLabel: "Suche",
+              },
+              modal: {
+                backButtonTitle: "Zurück",
+                displayDetails: "Details anzeigen",
+                noResultsText: "Keine Ergebnisse gefunden",
+                resetButtonTitle: "Zurücksetzen",
+                footer: {
+                  closeText: "Schließen",
+                  navigateText: "Navigieren",
+                  selectText: "Auswählen",
+                  closeKeyAriaLabel: "Schließen",
+                  navigateDownKeyAriaLabel: "Nach unten navigieren",
+                  navigateUpKeyAriaLabel: "Nach oben navigieren",
+                  selectKeyAriaLabel: "Auswählen",
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     socialLinks: [
       { icon: "github", link: "https://github.com/move-ev-sub/ccat" },
     ],
