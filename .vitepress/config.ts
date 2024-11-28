@@ -12,6 +12,7 @@ export default defineConfig({
       lang: 'de',
     },
   },
+  srcDir: 'src',
   markdown: {
     config: (md) => {
       md.use(markdownItTaskList);
