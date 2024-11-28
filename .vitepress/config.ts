@@ -1,3 +1,4 @@
+import markdownItTaskList from 'markdown-it-task-lists';
 import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
@@ -11,6 +12,11 @@ export default defineConfig({
       lang: "de",
     }
   },
+  markdown: {
+    config: (md) => {
+      md.use(markdownItTaskList)
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -19,6 +25,14 @@ export default defineConfig({
       { text: "Für Entwickler", link: "/developers" },
     ],
     sidebar: [
+    {
+      text: "Einführung",
+      link: "/",
+    },
+    {
+      text: "Roadmap",
+      link: "/roadmap",
+    },
       {
         text: "Examples",
         items: [
