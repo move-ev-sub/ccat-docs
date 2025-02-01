@@ -1,0 +1,20 @@
+{
+  "name": "ccat-docs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview --port 8080",
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "vitepress": "^1.6.3"
+  }
+}
