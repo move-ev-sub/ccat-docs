@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { DefaultTheme, defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,25 +6,58 @@ export default defineConfig({
   base: '/ccat-docs/',
   title: 'CCAT Documentation',
   description: 'Documentation of the ConsultingContact Application Tool',
+  lang: 'de-DE',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    nav: nav(),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/move-ev-sub/ccat-docs' },
     ],
+
+    sidebar: {
+      '/users': { base: '/users', items: sidebarUsers() },
+      '/developers': { base: '/developers', items: sidebarDevelopers() },
+    },
+
+    editLink: {
+      pattern: 'https://github.com/move-ev-sub/ccat-docs/main/src/:path',
+      text: 'Edit this page on GitHub',
+    },
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You',
+    },
   },
 });
+
+function nav(): DefaultTheme.NavItem[] {
+  return [
+    {
+      text: 'Anwender',
+      link: '/users/introduction/',
+      activeMatch: '/users/',
+    },
+    {
+      text: 'Entwickler',
+      link: '/developers/introduction/',
+      activeMatch: '/developers/',
+    },
+  ];
+}
+
+function sidebarUsers(): DefaultTheme.SidebarItem[] {
+  return [
+    { text: 'Einführung', link: '/introduction' },
+    {
+      text: 'Guides',
+      base: '/users/guides',
+      items: [{ text: 'Event vorbereitung', link: '/event-preperation' }],
+    },
+  ];
+}
+
+function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
+  return [{ text: 'Einführung', link: '/introduction' }];
+}
