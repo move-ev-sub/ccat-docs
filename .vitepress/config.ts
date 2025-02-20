@@ -3,7 +3,6 @@ import { DefaultTheme, defineConfig } from 'vitepress';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: './src',
-  base: '/ccat-docs/',
   title: 'CCAT Documentation',
   description: 'Documentation of the ConsultingContact Application Tool',
   lang: 'de-DE',
@@ -16,7 +15,7 @@ export default defineConfig({
     nav: nav(),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/move-ev-sub/ccat-docs' },
+      { icon: 'github', link: 'https://github.com/move-ev-sub/ccat' },
     ],
 
     sidebar: {
