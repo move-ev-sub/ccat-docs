@@ -8,6 +8,10 @@ export default defineConfig({
   description: 'Documentation of the ConsultingContact Application Tool',
   lang: 'de-DE',
   themeConfig: {
+    search: {
+      provider: 'local',
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
 
@@ -50,6 +54,7 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarUsers(): DefaultTheme.SidebarItem[] {
   return [
     { text: 'Einführung', link: '/introduction' },
+    { text: 'Was ist das CCAT?', link: '/what' },
     {
       text: 'Guides',
       base: '/users/guides',
@@ -59,5 +64,21 @@ function sidebarUsers(): DefaultTheme.SidebarItem[] {
 }
 
 function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
-  return [{ text: 'Einführung', link: '/introduction' }];
+  return [
+    { text: 'Einführung', link: '/introduction' },
+    { text: 'Technologien', link: '/technologies' },
+    {
+      text: '@ccat/server',
+      base: '/developers/ccat-server',
+      items: [
+        { text: 'Übersicht', link: '/overview' },
+        {
+          text: 'API',
+          link: '/',
+          base: '/developers/ccat-server/api',
+          items: [{ text: 'User', link: '/user' }],
+        },
+      ],
+    },
+  ];
 }
