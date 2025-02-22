@@ -5,8 +5,8 @@ export default defineConfig({
   srcDir: './src',
   title: 'CCAT Documentation',
   description: 'Documentation of the ConsultingContact Application Tool',
-  lang: 'de-DE',
   themeConfig: {
+    outline: "deep",
     search: {
       provider: 'local',
     },
@@ -66,6 +66,19 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
   return [
     { text: 'Einführung', link: '/introduction' },
     { text: 'Technologien', link: '/technologies' },
+    { text: 'Getting started', link: '/getting-started' },
+    { text: 'Routes', link: '/routes' },
+    { text: 'Versioning', link: '/versioning' },
+    {
+      text: 'Git',
+      base: '/developers/git',
+      items: [
+        { text: 'Repository', link: '/repository' },
+        { text: 'Branching', link: '/branching' },
+        { text: 'CI/CD', link: '/cicd' },
+        { text: 'Suggested workflow', link: '/suggested-workflow' },
+      ],
+    },
     {
       text: '@ccat/server',
       base: '/developers/ccat-server',
