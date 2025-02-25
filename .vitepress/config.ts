@@ -76,6 +76,7 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
         { text: 'Repository', link: '/repository' },
         { text: 'Branching', link: '/branching' },
         { text: 'CI/CD', link: '/cicd' },
+        { text: 'Commit messages', link: '/commit-messages' },
         { text: 'Suggested workflow', link: '/suggested-workflow' },
       ],
     },
