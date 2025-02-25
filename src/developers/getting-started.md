@@ -60,6 +60,17 @@ This will install all the dependencies of the project.
 
 Before you can start working on the project, you need to set up the environment. To do this, you need to create a `.env` file in the root of the project. You can use the `.env.example` file as a template. Copy the contents of the `.env.example` file into a new file called `.env` (or `.env.local` for better deferentiation) and fill in the required values.
 
+::: code-group
+
+```bash [.env.example]
+# Copy this file to .env.local and replace the values with your own
+
+NEXT_PUBLIC_SUPABASE_URL="http://127.0.0.1:54321"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0"
+DATABASE_URL="postgresql://postgres:password@localhost:5432"
+```
+
+:::
 
 ## Running the Project
 
