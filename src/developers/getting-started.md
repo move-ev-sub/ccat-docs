@@ -58,6 +58,8 @@ This will install all the dependencies of the project.
 
 ## Preparing the Environment
 
+To store the environment variables, which must not be exposed to the public, the project uses a `.env` file. `.env` files are used to store sensitive information like API keys, database URLs, etc. They are not committed to the repository and are only accessible to the server where the project is running.
+
 Before you can start working on the project, you need to set up the environment. To do this, you need to create a `.env` file in the root of the project. You can use the `.env.example` file as a template. Copy the contents of the `.env.example` file into a new file called `.env` (or `.env.local` for better deferentiation) and fill in the required values.
 
 ::: code-group
