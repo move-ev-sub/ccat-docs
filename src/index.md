@@ -3,20 +3,27 @@
 layout: home
 
 hero:
-  name: 'CCAT Documentation'
-  text: 'Documentation of the ConsultingContact Application Tool'
-  tagline: My great project tagline
+  name: 'CCAT'
+  text: 'Tool zur Verwaltung und Verteilung von Bewerbungen'
+  tagline: 'Ein Projekt von move - studentische Unternehmensberatung e.V.'
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Für Anwender
+      link: /users/introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Für Entwickler
+      link: /developers/introduction
+    - theme: alt
+      text: Github
+      link: /members/introduction
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Einfache Bedienung
+    details: Mit CCAT können Sie Bewerbungen einfach verwalten und verteilen.
+    icon: '🤱'
+  - title: Schnell und Intuitiv
+    details: Das CCAT Projekt wurde mit dem Ziel entwickelt, Bewerbungen schnell und intuitiv zu verwalten.
+    icon: '🚀'
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
