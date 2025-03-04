@@ -26,6 +26,5 @@ features:
     icon: '🚀'
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    icon: '🎉'
 ---

@@ -68,7 +68,7 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
     { text: 'Technologien', link: '/technologies' },
     { text: 'Getting started', link: '/getting-started' },
     { text: 'Routes', link: '/routes' },
-    { text: 'Versioning', link: '/versioning' },
+    { text: 'Versionierung', link: '/versioning' },
     {
       text: 'Git',
       base: '/developers/git',
