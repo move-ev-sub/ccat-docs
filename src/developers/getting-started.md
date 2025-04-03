@@ -141,7 +141,7 @@ Nach dem Starten der Datenbank solltest eine Ausgabe ähnlich der folgenden erha
 
 ::: code-group
 
-```bash [Terminal]{3,6,10}
+```bash [Terminal]{3,6,10,11}
 Started supabase local development setup.
 
          "API URL": http://127.0.0.1:54321
