@@ -1,23 +1,23 @@
-# Branching Model
+# Branching Modell
 
-In the CCAT Repository we use a modified version of the [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Instead of using 5 branches, we only use 3 branches: `master`, `development` and `feature` branches.
+Im CCAT Repository verwenden wir eine modifizierte Version des [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Anstatt 5 Branches zu verwenden, benutzen wir nur 3 Branches: `master`, `development` und `feature`.
 
 ## Branches
 
 ### `master`
 
-The `master` branch is the main branch of the project. It contains the latest stable version of the project. This branch is protected and can only be updated by merging a pull request (preferably from the `development` branch). This is the branch where we create releases from.
+Der `master`-Branch ist der Hauptzweig des Projekts. Er enthält die letzte stabile Version des Projekts. Dieser Zweig ist geschützt und kann nur durch das Zusammenführen eines Pull Requests (vorzugsweise vom `development`-Branch) aktualisiert werden. Dies ist der Branch von dem aus wir Releases erstellen.
 
 ### `development`
 
-The `development` branch is the main branch for development. It contains the latest changes and features that are being worked on. 
+Der `development`-Branch ist der Hauptzweig für die Entwicklung. Er enthält die neuesten Änderungen und Funktionen, an denen gearbeitet wird. 
 
 ### `feat/**`
 
-Feature branches are used to develop new features for the upcoming or a distant future release. The naming convention for feature branches is `feat/short-description`.
+Featurebranches werden verwendet, um neue Funktionen für die kommende oder eine weit entfernte zukünftige Version zu entwickeln. Die Namenskonvention für Featurebranches ist `feat/<short-description>`.
 
-Feature branches are created from the `development` branch and are merged back into the `development` branch.
+Featurebranches werden aus dem `development`-Branch erstellt und wieder mit dem `development`-Branch zusammengeführt.
 
-They should be deleted after the feature has been merged into the `development` branch.
+Sie sollten gelöscht werden, nachdem das Feature in den `development`-Branch zusammengeführt wurde.
 
-Features branches are created by creating a new branch for an issue in the issue tracker. Each issue gets its own branch. After the issue is resolved, the branch is merged back into the `development` branch and the issue is closed.
+Featurebranches werden erstellt, indem ein neuer Branch für ein Issue im Issue-Tracker erstellt wird. Jedes Issue erhält seinen eigenen Branch. Nachdem das Issue gelöst wurde, wird der Branch wieder mit dem `development`-Branch zusammengeführt und das Issue wird geschlossen.

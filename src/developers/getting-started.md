@@ -162,6 +162,11 @@ Started supabase local development setup.
 
 Kopiere nun die Werte aus den makrierten Zeilen in die `.env`-Datei.
 
+> [!warning] Achtung
+> Um von Prismas Pooling-Funktion gebrauch machen zu können, benötigt Prisma sowohl eine `DATABASE_URL` als auch eine `DIRECT_URL`. Die `DATABASE_URL` wird für Nutzer-Interaktionen verwendet, während die `DIRECT_URL` für direkte Zugriffe auf die Datenbank (Migrations, Seeds, etc.) verwendet wird.
+>
+> Im local development sind die Werte für `DATABASE_URL` und `DIRECT_URL` identisch, da die lokale supabase-Instanz keine Pooling-Funktion hat.
+
 ### Migration der Datenbank
 
 Nachdem die Datenbank gestartet wurde, muss die Datenbank migriert werden. Dadurch werden die erforderlichen Tabellen und Spalten in der Datenbank erstellt. Um die Datenbank zu migrieren, wird der folgende Befehl ausgeführt:
@@ -169,12 +174,20 @@ Nachdem die Datenbank gestartet wurde, muss die Datenbank migriert werden. Dadur
 ::: code-group
 
 ```bash
-pnpm drizzle-kit push
+pnpm db:migrate
 ```
 
 :::
 
 Dies wird die Migrationen ausführen und die notwendigen Tabellen in der Datenbank erstellen.
+
+### Datenbankseed
+
+Um die Datenbank mit Daten zu füllen, wird der folgende Befehl ausgeführt:
+
+```bash
+pnpm db:seed
+```
 
 ## Ausführen des Projekts
 

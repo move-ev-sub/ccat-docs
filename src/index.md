@@ -15,7 +15,7 @@ hero:
       link: /developers/introduction
     - theme: alt
       text: Github
-      link: /members/introduction
+      link: https://github.com/move-ev-sub/ccat
 
 features:
   - title: Einfache Bedienung

@@ -29,8 +29,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You',
+      copyright: 'Copyright © 2025 - Heute, move - studentische Unternehmensberatung e.V.',
     },
   },
 });
@@ -69,6 +68,10 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
     { text: 'Getting started', link: '/getting-started' },
     { text: 'Routes', link: '/routes' },
     { text: 'Versionierung', link: '/versioning' },
+    {
+      text: 'Datenbank',
+      link: '/database',
+    },
     {
       text: 'Git',
       base: '/developers/git',

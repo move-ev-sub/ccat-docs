@@ -4,11 +4,11 @@ outline: deep
 
 # Repository
 
-This is an introduction to our Git Repository. It is intended for developers who will be working on the project to give them an overview of the repository and how to work with it.
+Dies ist eine Einführung in unser Git Repository, um dir einen Überblick über die Repository und deren Struktur zu geben.
 
-## Structure
+## Struktur
 
-The repository is structured as follows:
+Die Repository ist wie folgt aufgebaut (oder ähnlich):
 
 ```text
 .
@@ -61,46 +61,46 @@ The repository is structured as follows:
 
 ### `/.github/workflows`
 
-Contains the GitHub Actions workflows. These are used to automate the CI/CD process.
+Enthält die GitHub-Aktionen-Workflows. Diese werden verwendet, um den CI/CD-Prozess zu automatisieren.
 
 ### `/.husky`
 
-Contains the configuration for Husky, a tool that allows you to run scripts on Git hooks. We use it to run linting and testing before committing.
+Enthält die Konfiguration für Husky, ein Werkzeug, mit dem Sie Skripte auf Git-Hooks ausführen können. Wir verwenden es, um Linting und Tests vor dem Commit durchzuführen.
 
 ### `/__tests__`
 
-Contains tests for the project. We use Vite's built-in testing library to write tests. Tests for UI components are placed in the same directory as the component and not in a separate `__tests__` directory.
+Enthält Tests für das Projekt. Wir verwenden die in Vite integrierte Testbibliothek, um Tests zu schreiben. Tests für UI-Komponenten werden im selben Verzeichnis wie die Komponente abgelegt und nicht in einem separaten `__tests__`-Verzeichnis.
 
 ### `/public`
 
-Contains static assets like images, favicons, etc. which are served by Next.js.
+Enthält statische Elemente wie Bilder, Favicons usw., die von Next.js bereitgestellt werden.
 
 ### `/src`
 
-Contains the source code for the project.
+Enthält den Quellcode für das Projekt.
 
 #### `/src/app`
 
-This is where the pages and layouts are defined. Each page is a React component that is rendered by Next.js.
+This is where the pages and layouts are defined. Each page is a React component that is rendered by Next.jsHier werden die Seiten und Layouts definiert. Jede Seite ist eine React-Komponente, die von Next.js gerendert wird.
 
 #### `/src/components`
 
-Contains reusable UI components. Each component is placed in its own directory and contains the component file, types file, test file, and an `index.ts` file to export the component.
+Enthält wiederverwendbare UI-Komponenten. Jede Komponente befindet sich in einem eigenen Verzeichnis und enthält die Komponentendatei, die Typendatei, die Testdatei und eine „index.ts“-Datei zum Exportieren der Komponente.
 
-All base UI components are placed in the `/ui` directory.
+Alle Basiskomponenten der Benutzeroberfläche befinden sich im Verzeichnis `/ui`.
 
 #### `/src/styles`
 
-Contains global styles and theme files which are used by Tailwind CSS.
+Enthält globale Stile und Themendateien, die von Tailwind CSS verwendet werden.
 
 #### `/src/utils`
 
-Contains utility functions and constants used throughout the project.
+Enthält Utility-Funktionen und Konstanten, die im gesamten Projekt verwendet werden.
 
 #### `/src/env.js`
 
-A file that uses @t3-oss/nexjs-env to load environment variables from a `.env` file and make sure they are available during runtime.
+Eine Datei, die `@t3-oss/nexjs-env` verwendet, um Umgebungsvariablen aus einer `.env`-Datei zu laden und sicherzustellen, dass sie während der Laufzeit verfügbar sind.
 
 #### `/src/middleware.ts`
 
-Middleware functions that are used to modify the request and response objects in the Next.js API routes.
+Middleware-Funktionen, die verwendet werden, um die Anfrage- und Antwortobjekte in den Next.js API-Routen zu ändern.

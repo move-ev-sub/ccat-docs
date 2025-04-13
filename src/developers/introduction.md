@@ -1,47 +1,9 @@
-# Hello World
+# Für Entwickler
 
-## Hello World
+Das CCAT (**C**onsulting **C**ontact **A**pplication **T**ool) ist ein Projekt von move - studentische Unternehmensberatung e.V. und wurde im Rahmen der consulting contact entwickelt. Mehr Informationen zum Tool selbst findest du in der [Einführung für Anwender](/users/introduction).
 
-### Hello World
+## Disclaimer
 
-Hello World
+Diese Dokumentation ist für Entwickler gedacht, die das Projekt selbständig weiterentwickeln möchten. Es wird keine Einführung in die Programmierung oder das Projekt geben, sondern nur eine Übersicht über die verschiedenen Teile und deren Zusammenhänge.
 
-| Name     | Age | City        |
-| -------- | --- | ----------- |
-| John Doe | 30  | New York    |
-| Jane Doe | 25  | Los Angeles |
-| Jim Doe  | 40  | Chicago     |
 
-```js [JS Example]
-const a = 1;
-```
-
-::: code-group
-
-```json [JSON Example]
-{
-  "jsc": {
-    "parser": {
-      "syntax": "typescript"
-    },
-    "target": "es2020"
-  }
-}
-```
-
-```yaml [YAML Example]
-jsc:
-  parser:
-    syntax: typescript
-  target: es2020
-```
-
-```ts [TS Example]
-import lodash from "lodash";
-
-export function hasValue(obj: any, path: string): boolean {
-  return lodash.has(obj, path) && lodash.get(obj, path) != null;
-}
-```
-
-:::
